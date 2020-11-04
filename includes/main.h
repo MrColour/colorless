@@ -6,15 +6,20 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 21:38:07 by home              #+#    #+#             */
-/*   Updated: 2020/11/03 21:51:16 by home             ###   ########.fr       */
+/*   Updated: 2020/11/03 22:55:13 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MAIN_H
 # define MAIN_H
 
-# include <stdio.h>
+# include <assert.h>
+# include <time.h> // To seed srand();
 
-void	prints(void);
+# include <stdio.h>
+# include <stdlib.h>
+
+unsigned int	high_mask(int max);
+unsigned int	get_rand(int max);
 
 #endif

@@ -9,6 +9,7 @@ BIN_DIR = bin/
 # List of all the source files.
 SRC_NAMES = \
 	main \
+	random \
 	utils \
 
 # List of all the source files, folders are to be added by
@@ -63,4 +64,4 @@ OBJS_VERIFY = $(filter-out $(BIN_DIR)$(SRC_DIR)main.o, $(OBJS))
 OBJS_VERIFY += $(BIN_DIR)$(SRC_DIR)$(VERI_NAME).o
 
 verify: $(BIN_DIR) $(OBJS_VERIFY)
-	gcc $(FLAGS) $(INCLUDES) -o $(VERI_NAME) $(OBJS_VERIFY)
+	gcc $(FLAGS) -fsanitize=address $(INCLUDES) -o $(VERI_NAME) $(OBJS_VERIFY)

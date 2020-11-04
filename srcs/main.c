@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 21:37:28 by home              #+#    #+#             */
-/*   Updated: 2020/11/03 21:51:26 by home             ###   ########.fr       */
+/*   Updated: 2020/11/03 22:35:19 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	main(void)
 {
-	prints();
 	printf("This is main 1.\n");
+	printf("%d\n", high_mask(100));
+
+	printf("%d\n", get_rand(100));
+
 	return (0);
 }
