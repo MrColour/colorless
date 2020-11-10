@@ -66,3 +66,10 @@ OBJS_VERIFY += $(BIN_DIR)$(SRC_DIR)$(VERI_NAME).o
 
 verify: $(BIN_DIR) $(OBJS_VERIFY)
 	gcc $(FLAGS) -fsanitize=address $(INCLUDES) -o $(VERI_NAME) $(OBJS_VERIFY)
+
+PUBLISH_DIR = ~/Documents/magic/
+
+publish:
+	make re
+	cp ./$(NAME) $(PUBLISH_DIR)
+	cp -rf config $(PUBLISH_DIR)/config/

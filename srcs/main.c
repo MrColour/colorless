@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 21:37:28 by home              #+#    #+#             */
-/*   Updated: 2020/11/10 13:21:04 by home             ###   ########.fr       */
+/*   Updated: 2020/11/10 14:22:40 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int	main(int aa, char **args)
 	t_option	*choices;
 
 	assert(aa > 1);
+	chdir(dirname(args[0]));
 
 	getentropy(&i, 4);
 	srand(time(NULL) * i);
