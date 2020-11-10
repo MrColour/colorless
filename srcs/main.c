@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 21:37:28 by home              #+#    #+#             */
-/*   Updated: 2020/11/04 01:37:07 by home             ###   ########.fr       */
+/*   Updated: 2020/11/10 13:21:04 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,9 @@ int	main(int aa, char **args)
 	t_option	*choices;
 
 	assert(aa > 1);
-	srand(time(NULL));
+
+	getentropy(&i, 4);
+	srand(time(NULL) * i);
 	choices = create_options(&args[1], aa - 1);
 
 	i = 0;
@@ -75,6 +77,5 @@ int	main(int aa, char **args)
 		out(choices, i, pick);
 		i++;
 	}
-
 	return (0);
 }

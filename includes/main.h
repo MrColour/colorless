@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 21:38:07 by home              #+#    #+#             */
-/*   Updated: 2020/11/04 01:15:45 by home             ###   ########.fr       */
+/*   Updated: 2020/11/10 13:20:04 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+
+# include <unistd.h>
+# include <sys/random.h>
 
 # include "color.h"
 
