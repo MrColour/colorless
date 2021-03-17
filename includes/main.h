@@ -13,6 +13,8 @@
 #ifndef MAIN_H
 # define MAIN_H
 
+#define _GNU_SOURCE
+
 # include <assert.h>
 # include <time.h> // To seed srand();
 
